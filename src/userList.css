@@ -1,0 +1,44 @@
+.user-list {
+  border: 1px solid black;
+  height: 100px;
+  overflow: scroll;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.user-list ul li {
+	list-style-type: none;
+}
+.pop-over {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.pop-over .pop-over-trigger {
+  border-bottom: 1px dotted black;
+}
+
+.pop-over .pop-over-extra-content {
+  float: right;
+  color: darkgray;
+}
+
+.pop-over .pop-over-text {
+  visibility: hidden;
+  width: fit-content;
+  padding: 5px 5px;
+  background: white;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 1;
+}
+
+.pop-over:hover .pop-over-text {
+  visibility: visible;
+}
+
+.pop-over:hover .pop-over-trigger {
+  background-color: darkgray;
+}
